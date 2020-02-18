@@ -31,7 +31,6 @@ public class FragmentItemImage extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.item_type_one, container, false);
-        Log.d("FragmentItemImage", "onCreateView");
         imageView = view.findViewById(R.id.imgGallery);
         return view;
     }
@@ -39,6 +38,5 @@ public class FragmentItemImage extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         Glide.with(getContext()).load(this.getStr()).into(imageView);
-        Log.d("FragmentItemImage", getStr());
     }
 }

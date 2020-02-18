@@ -34,9 +34,9 @@ public class RetrofitAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHold
 
     public void addData(List<Image> images) {
         if (images != null && images.size() > 0) {
-            int oldsize = imageList.size();
+            int oldSize = imageList.size();
             imageList.addAll(images);
-            notifyItemRangeChanged(oldsize, images.size());
+            notifyItemRangeChanged(oldSize, images.size());
         }
     }
 
@@ -61,7 +61,6 @@ public class RetrofitAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHold
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
         if (holder instanceof ImageHolder) {
             final Image pos = imageList.get(position);
-
             Glide.with(context).load(pos.getUrls().getSmall()).into(((ImageHolder) holder).img_lock);
             ((ImageHolder) holder).img_lock.setOnClickListener(new View.OnClickListener() {
                 @Override

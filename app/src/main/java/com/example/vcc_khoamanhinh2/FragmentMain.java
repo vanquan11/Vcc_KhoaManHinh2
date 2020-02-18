@@ -18,6 +18,7 @@ import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -41,6 +42,7 @@ public class FragmentMain  extends Fragment implements RetrofitAdapter.OnItemCli
     public GridLayoutManager gridLayoutManager;
     private boolean isLoadMore;
     private ArrayList<Image> imgList = new ArrayList<>();
+    private SwipeRefreshLayout refreshLayout;
 
     public boolean isSearch() {
         return search;
@@ -108,6 +110,19 @@ public class FragmentMain  extends Fragment implements RetrofitAdapter.OnItemCli
             }
         });
 
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        getImage(client_id, 1, 10);
+                        refreshLayout.setRefreshing(false);
+                    }
+                }, 1000);
+            }
+        });
+
         return view;
     }
 
@@ -123,8 +138,8 @@ public class FragmentMain  extends Fragment implements RetrofitAdapter.OnItemCli
 
     private void initView(View view) {
         rvListImage = view.findViewById(R.id.recyclerBackground);
+        refreshLayout = view.findViewById(R.id.refreshlayout);
     }
-
 
     private void getImage(String client_id, int page, int per_page) {
         RetrofitData.getInstance().getImage(client_id, page, per_page).enqueue(new Callback<List<Image>>() {
