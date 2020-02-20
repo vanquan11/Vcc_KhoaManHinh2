@@ -1,4 +1,4 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Model;
 
 public class Constains {
     public  static int ITEM = 2;

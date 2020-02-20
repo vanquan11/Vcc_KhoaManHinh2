@@ -1,4 +1,4 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,7 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import java.util.List;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
-    List<Fragment> fragmentList;
+    public List<Fragment> fragmentList;
     public SectionsPagerAdapter(@NonNull FragmentManager fm, List<Fragment> fragments) {
         super(fm);
         this.fragmentList = fragments;

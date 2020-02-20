@@ -1,4 +1,4 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,9 +11,12 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 
+import com.example.vcc_khoamanhinh2.Adapter.SectionsPagerAdapter;
+import com.example.vcc_khoamanhinh2.Fragment.FragmentGallery;
+import com.example.vcc_khoamanhinh2.Fragment.FragmentMain;
+import com.example.vcc_khoamanhinh2.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;

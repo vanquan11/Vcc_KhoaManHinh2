@@ -1,14 +1,11 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Fragment;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +13,9 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.vcc_khoamanhinh2.Adapter.AdapterGallery;
+import com.example.vcc_khoamanhinh2.R;
 
 import java.io.File;
 import java.util.ArrayList;

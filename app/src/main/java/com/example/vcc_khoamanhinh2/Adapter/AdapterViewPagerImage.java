@@ -1,9 +1,12 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+
+import com.example.vcc_khoamanhinh2.Fragment.FragmentItemImage;
+import com.example.vcc_khoamanhinh2.Model.Image;
 
 import java.util.ArrayList;
 

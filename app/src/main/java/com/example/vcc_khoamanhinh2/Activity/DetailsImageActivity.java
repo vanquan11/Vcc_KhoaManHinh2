@@ -1,22 +1,20 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.app.ProgressDialog;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
+import com.example.vcc_khoamanhinh2.Adapter.AdapterViewPagerImage;
+import com.example.vcc_khoamanhinh2.Fragment.FragmentItemImage;
+import com.example.vcc_khoamanhinh2.Model.Image;
+import com.example.vcc_khoamanhinh2.R;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -28,7 +26,6 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
 
 public class DetailsImageActivity extends AppCompatActivity {

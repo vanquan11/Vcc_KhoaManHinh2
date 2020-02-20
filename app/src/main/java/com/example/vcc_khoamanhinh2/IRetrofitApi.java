@@ -1,5 +1,8 @@
 package com.example.vcc_khoamanhinh2;
 
+import com.example.vcc_khoamanhinh2.Model.Image;
+import com.example.vcc_khoamanhinh2.Model.Search;
+
 import java.util.List;
 
 import retrofit2.Call;

@@ -1,4 +1,4 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Fragment;
 
 import android.Manifest;
 import android.content.Intent;
@@ -20,6 +20,13 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.example.vcc_khoamanhinh2.Activity.DetailsImageActivity;
+import com.example.vcc_khoamanhinh2.Model.Image;
+import com.example.vcc_khoamanhinh2.R;
+import com.example.vcc_khoamanhinh2.Model.Result;
+import com.example.vcc_khoamanhinh2.Adapter.RetrofitAdapter;
+import com.example.vcc_khoamanhinh2.RetrofitData;
+import com.example.vcc_khoamanhinh2.Model.Search;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.example.vcc_khoamanhinh2;
+package com.example.vcc_khoamanhinh2.Adapter;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,7 +11,9 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import java.io.ByteArrayOutputStream;
+
+import com.example.vcc_khoamanhinh2.R;
+
 import java.util.ArrayList;
 
 public class AdapterGallery extends RecyclerView.Adapter<AdapterGallery.ViewHolder> {
